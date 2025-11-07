@@ -1,0 +1,19 @@
+/* src/components/LogoSlider.css */
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.logo-slider-track {
+  animation: scroll-left 15s linear infinite; 
+  animation-timing-function: linear; /* Assure une vitesse constante */
+}
+
+.logo-slider-track.paused {
+  animation-play-state: paused;
+}
