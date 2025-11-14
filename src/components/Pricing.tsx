@@ -11,7 +11,7 @@ const directorMessage = {
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-24 bg-[#12141C]">
+    <section id="pricing" className="py-24 bg-[#12141cc3]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl shadow-lg">
           {/* Colonne 1 : Image du Directeur */}
@@ -26,7 +26,7 @@ const Pricing = () => {
 
           {/* Colonne 2 : Mot du Directeur */}
           <div className="p-4 md:p-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-300">
               Mot du Directeur
             </h2>
 
