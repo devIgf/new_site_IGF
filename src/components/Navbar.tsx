@@ -1,26 +1,36 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import LogoIgf from "../assets/igf_logo.png";
+import useScrollSpy from "../hooks/useScrollSpy";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
+  // Sections à surveiller
+  const sectionIds = [
+    "home",
+    "partenaires",
+    "features",
+    "testimonials",
+    "pricing",
+  ];
+  const activeSection = useScrollSpy(sectionIds);
 
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const linkBaseStyle = "font-bold transition-colors";
+  const linkInactive = "text-[#229b8b] hover:text-white";
+  const linkActive = "text-white border-b-2 border-white pb-1";
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 bg-white/20 ${
-        isScrolled
-          ? "bg-green-700/30 backdrop-blur-md py-2 shadow-lg"
-          : "py-2"
+        isScrolled ? "bg-green-700/30 backdrop-blur-md py-2 shadow-lg" : "py-2"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -30,25 +40,36 @@ const Navbar = () => {
           </h1>
         </div>
 
-        {/* Desktop menu */}
+        {/* ------- MENU DESKTOP -------- */}
         <ul className="hidden lg:flex items-center space-x-8">
-           <li>
-            <a href="#home" className="text-[#229b8b] font-bold hover:text-white transition-colors">
-              Home
+          <li>
+            <a
+              href="#home"
+              className={`${linkBaseStyle} ${
+                activeSection === "home" ? linkActive : linkInactive
+              }`}
+            >
+              Accueil
             </a>
           </li>
+
           <li>
             <a
               href="#partenaires"
-              className="text-[#229b8b] font-bold hover:text-white transition-colors"
+              className={`${linkBaseStyle} ${
+                activeSection === "partenaires" ? linkActive : linkInactive
+              }`}
             >
               Partenaires
             </a>
           </li>
+
           <li>
             <a
               href="#features"
-              className="text-[#229b8b] font-bold hover:text-white transition-colors"
+              className={`${linkBaseStyle} ${
+                activeSection === "features" ? linkActive : linkInactive
+              }`}
             >
               Services
             </a>
@@ -57,23 +78,26 @@ const Navbar = () => {
           <li>
             <a
               href="#testimonials"
-              className="text-[#229b8b] font-bold hover:text-white transition-colors"
+              className={`${linkBaseStyle} ${
+                activeSection === "testimonials" ? linkActive : linkInactive
+              }`}
             >
               Clients
             </a>
           </li>
+
           <li>
             <a
               href="#pricing"
-              className="text-[#229b8b] font-bold hover:text-white transition-colors"
+              className={`${linkBaseStyle} ${
+                activeSection === "pricing" ? linkActive : linkInactive
+              }`}
             >
               Contact
             </a>
           </li>
-          
         </ul>
 
-        {/* Mobile menu button */}
         <button
           className="lg:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -123,7 +147,6 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
-              
             </ul>
           </div>
         </div>

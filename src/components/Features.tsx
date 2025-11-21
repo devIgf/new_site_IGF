@@ -64,7 +64,7 @@ const Features = () => {
             {features.map((f, idx) => (
               <div key={idx} className="px-2">
                 <div className="bg-white/5 backdrop-blur-sm border border-[#229b8b] rounded-xl p-4 h-60 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 hover:shadow-xl">
-                  <div className="flex items-center space-x-3 mb-2">
+                  <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 rounded-lg bg-[#229b8b]  flex items-center justify-center text-white">
                       {f.icon}
                     </div>

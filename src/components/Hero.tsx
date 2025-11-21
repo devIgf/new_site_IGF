@@ -66,18 +66,18 @@ const fullDescription = `${part1} ${part2}`;
 
             <div className="mt-8 flex items-center space-x-6">
               <div>
-                <p className="text-2xl font-bold text-gray-300">+ 10ans</p>
+                <p className="text-2xl font-bold text-gray-300">+10ans</p>
                 <p className="text-sm text-gray-400">D'expérience</p>
               </div>
               <div className="h-12 w-px bg-gray-700"></div>
               <div>
-                <p className="text-2xl font-bold text-gray-300">+ 50</p>
+                <p className="text-2xl font-bold text-gray-300">+60</p>
                 <p className="text-sm text-gray-400">Clients satisfaits</p>
               </div>
               <div className="h-12 w-px bg-gray-700"></div>
               <div>
-                <p className="text-2xl font-bold text-gray-300">+130</p>
-                <p className="text-sm text-gray-400">Global Markets</p>
+                <p className="text-2xl font-bold text-gray-300">+150</p>
+                <p className="text-sm text-gray-400">Projets satisfaits</p>
               </div>
             </div>
           </div>
