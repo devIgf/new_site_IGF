@@ -15,10 +15,10 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">
-            Frequently Asked Questions
+            Nos formations
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Got questions about CryptoFlow? We've got answers. If you don't see what you're looking for, reach out to our support team.
+            Découvrez nos formations conçues pour répondre aux besoins spécifiques de votre entreprise, vous aidant à maîtriser les outils informatiques essentiels pour votre succès.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ const FAQ = () => {
                 <AccordionTrigger className="px-6 py-4 text-white hover:text-crypto-purple hover:no-underline">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-400">
+                <AccordionContent className="px-6 pb-4 text-gray-400 whitespace-pre-line leading-relaxed">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

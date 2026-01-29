@@ -4,7 +4,7 @@ import DG from "../assets/Diop.jpeg";
 const directorImage = "../assets/Diop.jpeg";
 
 const directorMessage = {
-  name: "Doudoiu Diop",
+  name: "Doudou Diop",
   title: "Directeur Général",
   message:
     "Chez IGF, notre mission est de simplifier votre transformation digitale en vous offrant des solutions informatiques innovantes (Sage, Odoo) et sur mesure.\n\nNous nous engageons à garantir l'efficacité, la sécurité et la performance de vos systèmes. La confiance de nos partenaires est au cœur de notre expertise.\n\nEnsemble, façonnons un avenir numérique performant pour votre entreprise.",
@@ -19,7 +19,9 @@ const Pricing = () => {
             Mot du Directeur
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Découvrez la vision inspirante de notre Directeur Général, Doudoiu Diop, sur l'engagement d'IGF à transformer votre entreprise grâce à des solutions informatiques innovantes et sur mesure.
+            Découvrez la vision inspirante de notre Directeur Général, Doudou
+            Dio, sur l'engagement d'IGF à transformer votre entreprise grâce à
+            des solutions informatiques innovantes et sur mesure.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl shadow-lg">
@@ -35,13 +37,12 @@ const Pricing = () => {
 
           {/* Colonne 2 : Mot du Directeur */}
           <div className="p-4 md:p-6">
-            {/* <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-300">
-              Mot du Directeur
-            </h2> */}
-
-            {/* Afficher le message avec des sauts de ligne */}
             {directorMessage.message.split("\n").map((paragraph, index) => (
-              <p key={index} className="text-gray-300 mb-3 leading-relaxed">
+              <p
+                key={index}
+                className="text-gray-300 mb-3 leading-relaxed text-left md:text-justify hyphens-auto
+"
+              >
                 {paragraph}
               </p>
             ))}

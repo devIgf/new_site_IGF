@@ -55,7 +55,12 @@ const Features = () => {
             Nos Services
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-           Optimisez l'impossible. Nous vous apportons une expertise complète, couvrant l'intégralité de vos besoins critiques : de la gestion d'entreprise et du développement de logiciels sur mesure, jusqu'à la paie, la comptabilité et les RH. Bénéficiez de solutions Cloud ultra-sécurisées et d'une assistance en temps réel pour une performance sans faille.
+            Optimisez l'impossible. Nous vous apportons une expertise complète,
+            couvrant l'intégralité de vos besoins critiques : de la gestion
+            d'entreprise et du développement de logiciels sur mesure, jusqu'à la
+            paie, la comptabilité et les RH. Bénéficiez de solutions Cloud
+            ultra-sécurisées et d'une assistance en temps réel pour une
+            performance sans faille.
           </p>
         </div>
 
@@ -63,7 +68,7 @@ const Features = () => {
           <Slider {...settings}>
             {features.map((f, idx) => (
               <div key={idx} className="px-2">
-                <div className="bg-white/5 backdrop-blur-sm border border-[#229b8b] rounded-xl p-4 h-60 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 hover:shadow-xl">
+                <div className="bg-white/5 backdrop-blur-sm border border-[#229b8b] rounded-xl p-4 h-40 flex flex-col justify-between hover:bg-white/10 transition-all duration-300 hover:shadow-xl cursor-pointer">
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 rounded-lg bg-[#229b8b]  flex items-center justify-center text-white">
                       {f.icon}

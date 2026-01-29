@@ -71,13 +71,13 @@ const fullDescription = `${part1} ${part2}`;
               </div>
               <div className="h-12 w-px bg-gray-700"></div>
               <div>
-                <p className="text-2xl font-bold text-gray-300">+60</p>
+                <p className="text-2xl font-bold text-gray-300">+100</p>
                 <p className="text-sm text-gray-400">Clients satisfaits</p>
               </div>
               <div className="h-12 w-px bg-gray-700"></div>
               <div>
-                <p className="text-2xl font-bold text-gray-300">+150</p>
-                <p className="text-sm text-gray-400">Projets satisfaits</p>
+                <p className="text-2xl font-bold text-gray-300">+600</p>
+                <p className="text-sm text-gray-400">Projets livrés</p>
               </div>
             </div>
           </div>
