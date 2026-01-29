@@ -76,7 +76,7 @@ const fullDescription = `${part1} ${part2}`;
               </div>
               <div className="h-12 w-px bg-gray-700"></div>
               <div>
-                <p className="text-2xl font-bold text-gray-300">+600</p>
+                <p className="text-2xl font-bold text-gray-300">+300</p>
                 <p className="text-sm text-gray-400">Projets livrés</p>
               </div>
             </div>

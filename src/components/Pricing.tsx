@@ -19,8 +19,7 @@ const Pricing = () => {
             Mot du Directeur
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Découvrez la vision inspirante de notre Directeur Général, Doudou
-            Dio, sur l'engagement d'IGF à transformer votre entreprise grâce à
+            Découvrez la vision inspirante de notre Directeur Général, sur l'engagement d'IGF à transformer votre entreprise grâce à
             des solutions informatiques innovantes et sur mesure.
           </p>
         </div>

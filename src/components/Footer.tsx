@@ -77,7 +77,7 @@ const Footer = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a
-                href="https://wa.me/221770000000" //numéro
+                href="https://wa.me/221784686565" //numéro
                 target="_blank"
                 className="text-gray-400 hover:text-green-500 transition-colors"
               >
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; <i>IGF</i> {currentYear}. All rights reserved.{" "}
+              &copy; <i>IGF</i> 2020. All rights reserved.{" "}
             </p>
             {/* <div className="flex space-x-6">
               <a
